@@ -9,7 +9,7 @@
         android:padding="@dimen/margin_smallest">
 
         <ImageView
-            android:id="@+id/erp_search_back"
+            android:id="@+id/com_search_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -35,7 +35,7 @@
             android:id="@+id/erp_focus_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/erp_search_back"
+            android:layout_toRightOf="@id/com_search_back"
             android:focusable="true"
             android:focusableInTouchMode="true" />
 
@@ -47,7 +47,7 @@
             android:layout_toRightOf="@id/erp_focus_view"
             android:background="@drawable/shape_search_view"
             android:imeOptions="actionSearch"
-            app:queryHint="@string/info_input_query" />
+            app:queryHint="@string/text_hint_query" />
     </RelativeLayout>
 </merge>
 

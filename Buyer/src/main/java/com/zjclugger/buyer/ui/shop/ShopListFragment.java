@@ -12,7 +12,7 @@ import com.zjclugger.buyer.webapi.response.GoodsCategoryResult;
 import com.zjclugger.buyer.webapi.response.GoodsResult;
 import com.zjclugger.buyer.webapi.response.ShopResult;
 import com.zjclugger.lib.base.BaseListFragment;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.router.utils.ARouterUtils;
 
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class ShopListFragment extends BaseListFragment {
     TabLayout mTabLayout;
     List<ShopResult> mShopList;
     @BindView(R.id.recycler_view)
-    ExtendsRecyclerView mRecyclerView;
+    ExtendRecyclerView mRecyclerView;
     BuyerViewModel mViewModel;
 
     @Override
@@ -58,7 +58,7 @@ public class ShopListFragment extends BaseListFragment {
     }
 
     @Override
-    public ExtendsRecyclerView getRecyclerView() {
+    public ExtendRecyclerView getRecyclerView() {
         return mRecyclerView;
     }
 

@@ -33,7 +33,7 @@ public class LoginActivity extends BaseLoginActivity {
 
     @Override
     public int getImageId() {
-        return R.mipmap.ic_evilnut_buyer;
+        return R.mipmap.ic_eshop_buyer;
     }
 
     @Override

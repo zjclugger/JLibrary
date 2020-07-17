@@ -33,7 +33,7 @@
         style="@style/Line"
         android:layout_below="@id/food_list_tabs" />
 
-    <com.zjclugger.lib.view.ExtendsRecyclerView
+    <com.zjclugger.lib.view.ExtendRecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

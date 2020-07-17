@@ -1,5 +1,6 @@
 package com.zjclugger.buyer.ui.im;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -20,6 +21,7 @@ import com.zjclugger.buyer.R;
  * Created by King.Zi on 2016/07/13.<br>
  * QQ: 78688689
  */
+@SuppressLint("AppCompatCustomView")
 public class SearchEditText extends EditText implements View.OnFocusChangeListener, TextWatcher {
     private Drawable mClearDrawable;
     private boolean hasFocus;

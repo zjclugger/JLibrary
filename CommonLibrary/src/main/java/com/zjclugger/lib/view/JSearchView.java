@@ -56,7 +56,7 @@ public class JSearchView extends RelativeLayout {
         mTextView = view.findViewById(R.id.erp_focus_view);
         mRightView = view.findViewById(R.id.erp_search_right);
         mSearchView = view.findViewById(R.id.erp_search_view);
-        mBackView = view.findViewById(R.id.erp_search_back);
+        mBackView = view.findViewById(R.id.com_search_back);
         mRootView = activity.getWindow().getDecorView();
         addOnGlobalLayoutListener();
     }

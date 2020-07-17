@@ -17,11 +17,6 @@
             android:name="com.zjclugger.component.picture.MediaPreviewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.zjclugger.component.ui.FragmentSupportActivity"
-            android:launchMode="standard"
-            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 
 /**
- * 业务组件: ERP业务相关的功能封装（implementation），可通过ARouter调起
+ * 业务组件: APP业务相关的功能封装（implementation），可通过ARouter调起
  * 功能组件：分享，扫一扫，图表等
  */
 android {
@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation project(path: ':CommonLibrary')
 
     implementation rootProject.ext.dependencies["PictureSelector"]
@@ -43,5 +43,5 @@ dependencies {
 
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     annotationProcessor rootProject.ext.dependencies["autoService"]
-    annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
+    //annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
 }

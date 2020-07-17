@@ -160,7 +160,7 @@ public abstract class BaseActivity extends AppCompatActivity implements SearchVi
 
     @Override
     public String getSearchViewHitText() {
-        return getString(R.string.info_input_query);
+        return getString(R.string.text_hint_query);
     }
 
     @Override

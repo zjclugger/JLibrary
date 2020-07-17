@@ -10,9 +10,11 @@ import android.content.pm.ResolveInfo;
 import android.content.res.TypedArray;
 import android.graphics.Point;
 import android.os.Build;
+import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
 import android.view.WindowManager;
 
 import androidx.annotation.ArrayRes;
@@ -20,6 +22,7 @@ import androidx.annotation.StringRes;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,7 +39,8 @@ import java.util.regex.Pattern;
 
 /**
  * 共用工具类<br>
- * Created by King.Zi on 2016/10/8.<br>
+ * Created by King.Zi on 2020/7/6.<br>
+ * Copyright (c) 2020 zjclugger.com
  */
 public class CommonUtils {
     private static final String TAG = "LibUtils";
@@ -244,9 +248,24 @@ public class CommonUtils {
         try {
             return new Gson().fromJson(input, clazz);
         } catch (JsonSyntaxException e) {
-            Log.d(TAG, "exception is " + e.getMessage());
+            Log.e(TAG, "exception is " + e.getMessage());
         }
 
+        return null;
+    }
+
+    /**
+     * @param input json string
+     * @param typeToken 解析类似OuterClass<innerClass>数据时使用，new TypeToken<OuterClass<innerClass>>(){}
+     * @param <T>
+     * @return
+     */
+    public static <T> T json2Object(String input, TypeToken typeToken) {
+        try {
+            return new Gson().fromJson(input, typeToken.getType());
+        } catch (JsonSyntaxException e) {
+            Log.e(TAG, "exception is " + e.getMessage());
+        }
         return null;
     }
 

@@ -7,7 +7,7 @@ import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.webapi.response.IMResult;
 import com.zjclugger.lib.base.BaseListFragment;
 import com.zjclugger.lib.utils.WidgetUtils;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ public class ChatFragment extends BaseListFragment {
     private final static String TAG = "Chat";
 
     @BindView(R.id.recycler_view)
-    ExtendsRecyclerView mRecyclerView;
+    ExtendRecyclerView mRecyclerView;
     @BindView(R.id.send_message)
     TextView mSendMessageView;
     @BindView(R.id.message_edit_view)
@@ -52,7 +52,7 @@ public class ChatFragment extends BaseListFragment {
     }
 
     @Override
-    public ExtendsRecyclerView getRecyclerView() {
+    public ExtendRecyclerView getRecyclerView() {
         mRecyclerView.setSpan(0f);
         mRecyclerView.setColorResource(R.color.bg_white);
         return mRecyclerView;

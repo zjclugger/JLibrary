@@ -5,7 +5,14 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 日期工具类<br>
+ * Created by King.Zi on 2020/7/6.<br>
+ * Copyright (c) 2020 zjclugger.com
+ */
 public class DateTimeUtils {
+    public static final String DATE_FORMAT_YMDHM = "yyyy-MM-dd HH:mm";
+    public static final String DATE_FORMAT_YMDHMS = "yyyy-MM-dd HH:mm:ss";
 
     private DateTimeUtils() {
     }
@@ -70,5 +77,31 @@ public class DateTimeUtils {
         } catch (ParseException e) {
             return null;
         }
+    }
+
+    /**
+     * 获取日期时间
+     *
+     * @param date
+     * @param format 如：yyyy-MM-dd HH:mm:ss
+     * @return
+     */
+    public static String getDateTime(Date date, String format) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat(format);
+        return dateFormat.format(date);
+    }
+
+    public static long dateToStamp(String dataTime, String format) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
+        try {
+            return simpleDateFormat.parse(dataTime).getTime();
+        } catch (ParseException e) {
+            return 0l;
+        }
+    }
+
+    public static String stampToDate(long dateTime, String format) {
+        Date date = new Date(dateTime);
+        return getDateTime(date, format);
     }
 }

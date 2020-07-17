@@ -11,7 +11,7 @@ import com.zjclugger.lib.R;
 import com.zjclugger.lib.ui.adapter.JBaseQuickAdapter;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.WidgetUtils;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
@@ -35,7 +35,7 @@ public abstract class BaseListFragment extends BaseFragment {
     protected JBaseQuickAdapter mAdapter;
     protected boolean mIsPagingQuery;
 
-    public abstract ExtendsRecyclerView getRecyclerView();
+    public abstract ExtendRecyclerView getRecyclerView();
 
     public abstract void getDataFromServer(boolean isPagingQuery);
 

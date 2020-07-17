@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Outline;
 import android.graphics.Typeface;
 import android.os.Build;
+import android.os.SystemClock;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.SpannableString;
@@ -32,7 +33,13 @@ import com.zjclugger.lib.R;
 import com.zjclugger.lib.view.recyclerview.LinearItemDecoration;
 
 import java.util.List;
+import java.util.TreeMap;
 
+/**
+ * View工具类<br>
+ * Created by King.Zi on 2020/7/6.<br>
+ * Copyright (c) 2020 zjclugger.com
+ */
 public class ViewUtils {
     private static final int GRAVITY_LEFT = 0;
     private static final int GRAVITY_CENTER = 1;
@@ -40,6 +47,8 @@ public class ViewUtils {
     private static final int TEXT_STYLE_BOLD = 0;
     private static final int TEXT_STYLE_ITALIC = 1;
     private static final int TEXT_STYLE_ITALIC_BOLD = 2;
+    private static final int MIN_CLICK_DELAY_TIME = 1000;   // 两次点击按钮之间的点击间隔不能少于1000毫秒
+    private static long sLastClickTime;
 
     private ViewUtils() {
     }
@@ -281,12 +290,37 @@ public class ViewUtils {
     /**
      * 设置控件为只读
      *
+     * @param isReadOnly true:设置为只读 false:取消只读
+     * @param views      要设置的view
+     */
+    public static void setReadOnly(boolean isReadOnly, View... views) {
+        for (View view : views) {
+            if (view != null) {
+                view.setEnabled(!isReadOnly);
+                view.setFocusable(!isReadOnly);
+                view.setFocusableInTouchMode(!isReadOnly);
+            }
+        }
+    }
+
+    /**
+     * 设置控件为只读
+     *
      * @param views
      */
     public static void setReadOnly(View... views) {
-        for (View view : views) {
+        setReadOnly(true, views);
+    }
+
+    /**
+     * 设置文本编辑控件为只读
+     *
+     * @param views
+     */
+    public static void setEditViewReadOnly(EditText... views) {
+        for (EditText view : views) {
             if (view != null) {
-                view.setEnabled(false);
+                view.setCursorVisible(false);
                 view.setFocusable(false);
                 view.setFocusableInTouchMode(false);
             }
@@ -390,7 +424,7 @@ public class ViewUtils {
      * @return
      */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public static void setViewRound(View view, float radius) {
+    public static void setViewRound(View view, final float radius) {
         view.setOutlineProvider(new ViewOutlineProvider() {
             @Override
             public void getOutline(View view, Outline outline) {
@@ -398,5 +432,50 @@ public class ViewUtils {
             }
         });
         view.setClipToOutline(true);
+    }
+
+    /**
+     * 防止1秒内重复点击
+     *
+     * @return
+     */
+    public static boolean isFastClick() {
+        boolean flag = false;
+        long curClickTime = System.currentTimeMillis();
+        if ((curClickTime - sLastClickTime) >= MIN_CLICK_DELAY_TIME) {
+            flag = true;
+        }
+        sLastClickTime = curClickTime;
+        return flag;
+    }
+
+    /**
+     * 设置连接点击功能
+     *
+     * @param view                 view
+     * @param hits                 点击次数
+     * @param duration             持续时长
+     * @param multipleHitsListener 监听器
+     */
+    public static void setOnMultipleHitsListener(View view, int hits, int duration,
+                                                 Monitor.MultipleHitsListener multipleHitsListener) {
+        view.setOnClickListener(new View.OnClickListener() {
+            final long DURATION = duration * 1000;
+            long[] mHits = null;
+
+            @Override
+            public void onClick(View v) {
+                if (mHits == null) {
+                    mHits = new long[hits];
+                }
+
+                System.arraycopy(mHits, 1, mHits, 0, mHits.length - 1);
+                mHits[mHits.length - 1] = SystemClock.uptimeMillis();
+                if (mHits[0] >= (SystemClock.uptimeMillis() - DURATION)) {
+                    mHits = null;
+                    multipleHitsListener.onMultipleHitsCompleted();
+                }
+            }
+        });
     }
 }

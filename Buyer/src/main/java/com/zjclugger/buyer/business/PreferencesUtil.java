@@ -9,7 +9,7 @@ import com.zjclugger.lib.utils.SharedPreferencesUtils;
  * Copyright (c) 2020 zjclugger.com
  */
 public class PreferencesUtil {
-    private static final String FILE_NAME = "evilnut_buyer";
+    private static final String FILE_NAME = "eshop_buyer";
     private SharedPreferencesUtils mSharedPreferences;
 
     private static class SingletonHolder {

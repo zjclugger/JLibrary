@@ -63,7 +63,7 @@ public abstract class BaseLoginActivity extends AppCompatActivity {
 
     private void initView() {
         mLoginButton = findViewById(R.id.login_button);
-        ImageView imageView = findViewById(R.id.iv_evilnut_view);
+        ImageView imageView = findViewById(R.id.iv_eshop_view);
         imageView.setImageResource(getImageId());
         mPasswordLayout = findViewById(R.id.til_password);
         mUserNameText = findViewById(R.id.et_username);

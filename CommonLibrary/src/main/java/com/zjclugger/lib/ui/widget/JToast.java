@@ -92,12 +92,32 @@ public class JToast {
      * @param context
      * @param iconResId
      * @param message
-     * @param isLongDuraction
+     * @param isLongDuration
      */
-    public JToast(Context context, int iconResId, String message, boolean isLongDuraction) {
+    public JToast(Context context, int iconResId, String message, boolean isLongDuration) {
         this.mContext = context;
-        mIsLongDuration = isLongDuraction;
+        mIsLongDuration = isLongDuration;
         this.show(iconResId, message);
+    }
+
+    public JToast(Context context, int textResId, boolean isLongDuration, boolean hasIcon) {
+        this.mContext = context;
+        mIsLongDuration = isLongDuration;
+        if (hasIcon) {
+            this.show(R.drawable.ic_information, context.getString(textResId));
+        } else {
+            this.show(context.getString(textResId));
+        }
+    }
+
+    public JToast(Context context, String message, boolean isLongDuration, boolean hasIcon) {
+        this.mContext = context;
+        mIsLongDuration = isLongDuration;
+        if (hasIcon) {
+            this.show(R.drawable.ic_information, message);
+        } else {
+            this.show(message);
+        }
     }
 
     private void show(int iconId, String message) {
@@ -108,8 +128,9 @@ public class JToast {
             }
 
             if (!TextUtils.isEmpty(message)) {
-                mToast = new android.widget.Toast(this.mContext);
-                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.toast_layout, null);
+                mToast = new Toast(this.mContext);
+                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.toast_layout
+                        , null);
                 ImageView toastIcon = (ImageView) toastView.findViewById(R.id.icon);
                 TextView toastValue = (TextView) toastView.findViewById(R.id.message);
                 mToast.setDuration(mIsLongDuration ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
@@ -123,7 +144,32 @@ public class JToast {
                 toastValue.setText(message);
                 mToast.show();
             } else {
-                Log.d(TAG, "ErpToast message is null");
+                Log.d(TAG, "JToast message is null");
+            }
+        } else {
+            Log.e(TAG, "will show the toast " + message + ", but context is null");
+        }
+    }
+
+    private void show(String message) {
+        if (mContext != null) {
+            if (mToast != null) {
+                mToast.cancel();
+                mToast = null;
+            }
+
+            if (!TextUtils.isEmpty(message)) {
+                mToast = new Toast(this.mContext);
+                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.toast_message_layout
+                        , null);
+                TextView toastValue = (TextView) toastView.findViewById(R.id.message);
+                mToast.setDuration(mIsLongDuration ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
+                mToast.setGravity(Gravity.BOTTOM, 0, 0);
+                mToast.setView(toastView);
+                toastValue.setText(message);
+                mToast.show();
+            } else {
+                Log.d(TAG, "JToast message is null");
             }
         } else {
             Log.e(TAG, "will show the toast " + message + ", but context is null");

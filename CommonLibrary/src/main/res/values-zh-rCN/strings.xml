@@ -3,9 +3,12 @@
     <string name="nav_drawer_open">nav_drawer_open</string>
     <string name="nav_drawer_close">nav_drawer_close</string>
 
-    <string name="info_input_query">请输入查询内容</string>
+    <string name="info_last_page">已在最后一页</string>
+    <string name="info_first_page">已到第一页</string>
+
     <string name="text_confirm">确认</string>
     <string name="text_cancel">取消</string>
+
     <string name="deleting">正在删除...</string>
     <string name="delete_success">删除成功</string>
     <string name="delete_failed">删除失败，请重试！</string>
@@ -13,39 +16,74 @@
     <string name="identification_wait">正在识别</string>
     <string name="upload_failed">更新失败</string>
     <string name="price_unit">&#165;%1$d</string>
-    <string name="info_last_page">已在最后一页</string>
-    <string name="info_first_page">已到第一页</string>
-    <!-- 电商 -->
+    <string name="first_select_content">请先选择上传内容</string>
+    <string name="upload_success">上传成功</string>
+
     <string name="login">登录</string>
     <string name="loading">正在加载 ...</string>
+    <string name="logout">退出登录</string>
+    <string name="value_price">&#165;%1$.2f</string>
+    <string name="text_other">其他</string>
+    <string name="text_all_choose">全选</string>
+    <string name="text_completed">已完成</string>
+    <string name="text_modify">修改</string>
+
+    <string name="no_data">There is no data.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="waiting">Please waiting...</string>
+    <string name="developing">开发中...敬请期待，谢谢！</string>
+    <string name="title_detail">详情页</string>
+    <string name="msg_permission_storage">为保障本应用的功能正常运行，请授于读写存储卡的权限。</string>
+    <string name="msg_permission_storage_require">因缺少必要权限当前应用无法正常运行,请前往【设置】界面授权。</string>
+
+
+    <string name="error_get_data">获取数据失败，请重试！</string>
+    <string name="info_list_top">已在列表最顶部</string>\
+    <string name="error_network_unreachable">网络异常，请检查网络连接后重试！</string>
+    <string name="error_authentication">认证失效，请重新登录</string>
+    <string name="error_network_timeout">操作超时，请检查网络后重试！</string>
+    <string name="error_server_unreachable">不能连接到服务器，请检查网络后重试！</string>
+    <string name="error_access_exception">访问异常，请重试！</string>
+    <string name="error_operation_failed">出错了，操作失败！</string>
+    <string name="operation_success">操作成功！</string>
+    <string name="operation_failed">操作失败！</string>
+    <string name="error_get_list_failed">列表获取失败！</string>
+    <string name="deafult_null_string">暂无</string>
+    <string name="default_rmb_string">元</string>
+    <string name="complete">完成</string>
+    <string name="text_edit">编辑</string>
+    <string name="ask_to_continue">是否继续？</string>
+    <string name="year_month">yyyy年MM月</string>
+    <string name="all">全部</string>
+    <string name="text_continue">继续</string>
+    <string name="year_month_day">yyyy年MM月dd日</string>
+    <string name="workbench">工作台</string>
+    <string name="notification_message">通知消息</string>
+    <string name="more">更多>></string>
+    <string name="text_more">更多</string>
+    <string name="function_common">常用功能</string>
+    <string name="view_origianl_pic">查看原图</string>
+    <string name="upload_date">上传日期</string>
+    <string name="text_view">查看</string>
+    <string name="text_total">合计</string>
+    <string name="text_clean">清空</string>
+    <string name="text_start_datetime">起始时间</string>
+    <string name="history_record">历史记录</string>
+
+    <string name="date_picker_year">年</string>
+    <string name="date_picker_month">月</string>
+    <string name="date_picker_day">日</string>
+    <string name="date_picker_hour">时</string>
+    <string name="date_picker_minute">分</string>
+    <string name="date_picker_second">秒</string>
+    <string name="text_hint_query">请输入查询内容</string>
+
+
     <string name="tip_input_company">请输入公司名称</string>
     <string name="tip_input_account">请输入您的手机号s</string>
     <string name="tip_input_password">请输入您的密码</string>
     <string name="tip_register_password">请输入6位以上密码</string>
     <string name="tip_input_email">请输入您的邮箱</string>
     <string name="tip_input_validation_code">请输入您的验证码</string>
-    <string name="copyright">西安麦特赛尔软件技术有限公司 版权所有</string>
-    <string name="logout">退出登录</string>
-    <string name="start_price">&#165;%1$.2f 起</string>
-    <string name="value_price">&#165;%1$.2f</string>
-    <string name="goods_price">&#165;%1$.2f</string>
-    <string name="food_lunch">午餐</string>
-    <string name="food_home_cooking">家常菜</string>
-    <string name="food_porridge_shop">包子粥铺</string>
-    <string name="food_japanese_korean_cuisine">日韩料理</string>
-    <string name="text_other">其他</string>
-    <string name="text_introduction">简介</string>
-    <string name="text_goods">商品</string>
-    <string name="text_settlement">结算</string>
-    <string name="text_all_choose">全选</string>
-    <string name="text_to_delivery">待发货</string>
-    <string name="text_to_payment">待付款</string>
-    <string name="text_to_receive">待收货</string>
-    <string name="text_completed">已完成</string>
-    <string name="text_user_cancel">用户取消</string>
-    <string name="text_timeout_cancel">超时取消</string>
-    <string name="order_cancel_alert">订单将在24小时后自动取消</string>
-    <string name="text_modify">修改</string>
-    <string name="text_to_handle">待处理</string>
-    <string name="text_delivered">已配送</string>
 </resources>

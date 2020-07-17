@@ -23,7 +23,7 @@ import com.zjclugger.lib.utils.Monitor;
  */
 public class JProgressDialog extends Dialog {
 
-    private static final String TAG = "ErpProgressDialog";
+    private static final String TAG = "JProgressDialog";
     private Context mContext;
     private static final int MSG_PROGRESS_TIME_OUT = 1111;
     private static final int TIME_OUT = 30 * 1000;

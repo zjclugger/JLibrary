@@ -20,6 +20,7 @@ import com.zjclugger.lib.R;
  * Copyright (c) 2020 zjclugger.com
  */
 public class FloatButtonView extends RelativeLayout {
+  public static final String TAG = "FloatButton";
     private int mTopImageRes;
     private ImageView mTopImageView;
     private Context mContext;
@@ -92,7 +93,8 @@ public class FloatButtonView extends RelativeLayout {
                     mTopImageView.setVisibility(GONE);
                 }
 
-                Log.d("onScrolled,scrollY=" + mScrollY + ",fvi=" + manager.findFirstVisibleItemPosition());
+        Log.d(TAG,
+                "onScrolled,scrollY=" + mScrollY + ",fvi=" + manager.findFirstVisibleItemPosition());
                 super.onScrolled(recyclerView, dx, dy);
             }
         });

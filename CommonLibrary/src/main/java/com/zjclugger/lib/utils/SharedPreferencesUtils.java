@@ -8,10 +8,12 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * Created by King.Zi on 2020/4/9.
+ * @title <br>
+ * Created by King.Zi on 2020/7/10.<br>
+ * Copyright (c) 2020 zjclugger.com
  */
 public class SharedPreferencesUtils {
-    private static final String FILE_NAME_DEFAULT = "erp_data";
+    private static final String FILE_NAME_DEFAULT = "jlib_data";
     private static final int PREFERENCES_MODE = Context.MODE_PRIVATE;
 
     private Context mContext;

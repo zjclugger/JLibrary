@@ -7,9 +7,9 @@
     <application
         android:name="com.zjclugger.lib.base.BaseApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_evilnut_buyer"
+        android:icon="@mipmap/ic_eshop_buyer"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_evilnut_buyer"
+        android:roundIcon="@mipmap/ic_eshop_buyer"
         android:supportsRtl="true"
         android:theme="@style/BaseAppTheme"
         android:usesCleartextTraffic="true"

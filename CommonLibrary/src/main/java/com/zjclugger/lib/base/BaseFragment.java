@@ -315,7 +315,7 @@ public abstract class BaseFragment extends Fragment implements FragmentOnKeyList
 
     @Override
     public String getSearchViewHitText() {
-        return getActivity().getString(R.string.info_input_query);
+        return getActivity().getString(R.string.text_hint_query);
     }
 
     @Override

@@ -8,24 +8,27 @@ import com.zjclugger.lib.ui.widget.JToast;
 
 /**
  * 控件工具类<br>
- * Created by King.Zi on 2018/7/8.<br>
+ * Created by King.Zi on 2020/7/6.<br>
+ * Copyright (c) 2020 zjclugger.com
  */
 public class WidgetUtils {
-    private static final String TAG = "WidgetUtils";
-
     private WidgetUtils() {
     }
 
     public static void toast(Context context, int strResId, boolean longTime) {
-        new JToast(context, strResId, longTime);
+        new JToast(context, strResId, longTime, false);
     }
 
     public static void toast(Context context, String message, boolean longTime) {
-        new JToast(context, message, longTime);
+        new JToast(context, message, longTime, false);
     }
 
     public static void toast(Context context, int strResId) {
-        new JToast(context, strResId, true);
+        new JToast(context, strResId, false, false);
+    }
+
+    public static void toast(Context context, String message) {
+        new JToast(context, message, false, false);
     }
 
     public static void toastOKMessage(Context context, int strResId) {
