@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload;
+package com.zjclugger.buyer.module.billupload;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,10 +13,10 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.zjclugger.buyer.module.billupload.uploader.MediaUploadActivity;
 import com.zjclugger.lib.R;
-import com.zjclugger.module.billupload.uploader.MediaUploadActivity;
-import com.zjclugger.module.billupload.uploader.entity.UploadOriginalResult;
-import com.zjclugger.module.billupload.uploader.entity.UploadOriginalResultWrapper;
+import com.zjclugger.buyer.module.billupload.uploader.entity.UploadOriginalResult;
+import com.zjclugger.buyer.module.billupload.uploader.entity.UploadOriginalResultWrapper;
 import com.zjclugger.lib.api.ApiResponse;
 import com.zjclugger.lib.api.ApiResponseUtils;
 import com.zjclugger.lib.api.entity.BaseWrapper;

@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload.uploader;
+package com.zjclugger.buyer.module.billupload.uploader;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import com.luck.picture.lib.entity.LocalMedia;
 import com.luck.picture.lib.permissions.RxPermissions;
 import com.luck.picture.lib.tools.PictureFileUtils;
 import com.zjclugger.lib.R;
-import com.zjclugger.module.billupload.uploader.entity.UploadLocalMedia;
+import com.zjclugger.buyer.module.billupload.uploader.entity.UploadLocalMedia;
 import com.zjclugger.component.picture.selector.FullyGridLayoutManager;
 import com.zjclugger.component.picture.selector.GridMediaAdapter;
 import com.zjclugger.lib.base.BaseActivity;

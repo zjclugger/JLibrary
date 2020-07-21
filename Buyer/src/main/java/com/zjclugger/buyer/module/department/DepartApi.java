@@ -1,4 +1,4 @@
-package com.zjclugger.module.department;
+package com.zjclugger.buyer.module.department;
 
 import androidx.lifecycle.LiveData;
 

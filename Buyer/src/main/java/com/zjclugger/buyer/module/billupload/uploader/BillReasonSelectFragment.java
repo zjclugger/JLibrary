@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload.uploader;
+package com.zjclugger.buyer.module.billupload.uploader;
 
 import android.view.View;
 

@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload.uploader;
+package com.zjclugger.buyer.module.billupload.uploader;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
 import com.zjclugger.lib.R;
-import com.zjclugger.module.billupload.uploader.entity.UploadLocalMedia;
+import com.zjclugger.buyer.module.billupload.uploader.entity.UploadLocalMedia;
 import com.zjclugger.lib.ui.adapter.JBaseQuickAdapter;
 import com.zjclugger.lib.view.recyclerview.JBaseViewHolder;
 

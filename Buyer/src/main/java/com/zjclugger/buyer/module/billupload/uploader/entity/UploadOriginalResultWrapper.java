@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload.uploader.entity;
+package com.zjclugger.buyer.module.billupload.uploader.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;

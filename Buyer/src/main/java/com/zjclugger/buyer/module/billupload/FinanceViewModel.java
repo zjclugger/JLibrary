@@ -1,4 +1,4 @@
-package com.zjclugger.module.billupload;
+package com.zjclugger.buyer.module.billupload;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
