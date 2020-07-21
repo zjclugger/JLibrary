@@ -15,7 +15,7 @@ import com.alibaba.android.arouter.facade.callback.NavCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.zjclugger.lib.R;
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JMediaItem;
+import com.zjclugger.lib.entity.JMediaItem;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.WidgetUtils;
 import com.zjclugger.router.ARouterConstants;

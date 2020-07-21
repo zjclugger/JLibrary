@@ -20,7 +20,7 @@ import com.zjclugger.buyer.persistence.entity.Shopcart;
 import com.zjclugger.buyer.ui.vm.BuyerViewModel;
 import com.zjclugger.buyer.webapi.response.ProductResult;
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.utils.CommonUtils;
 import com.zjclugger.lib.view.ExtendLabelValueView;
 import com.zjclugger.buyer.ui.banner.BannerImageAdapter;

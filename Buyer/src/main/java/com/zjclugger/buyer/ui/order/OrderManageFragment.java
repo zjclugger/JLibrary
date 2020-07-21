@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.google.android.material.tabs.TabLayout;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.utils.BuyerConstants;
 import com.zjclugger.buyer.webapi.response.GoodsResult;

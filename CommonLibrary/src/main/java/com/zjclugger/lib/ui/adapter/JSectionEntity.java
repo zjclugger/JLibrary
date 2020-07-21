@@ -2,7 +2,7 @@
 package com.zjclugger.lib.ui.adapter;
 
 import com.chad.library.adapter.base.entity.SectionEntity;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 
 /**
  * <br>

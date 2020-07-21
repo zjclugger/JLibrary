@@ -1,7 +1,5 @@
 package com.zjclugger.lib.business.uploader;
 
-import com.zjclugger.lib.business.uploader.entity.UploadFile;
-
 /**
  * 自定义文件上传、下载观察者 (增强 RequestBaseObserver)
  */

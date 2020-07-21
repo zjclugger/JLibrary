@@ -18,7 +18,7 @@ import com.bigkoo.pickerview.jview.OptionsPickerView;
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
 import com.bigkoo.pickerview.utils.DateTimeFormat;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.finance.R;
 import com.zjclugger.finance.databinding.FragmentOriginalDetailEditBinding;
 import com.zjclugger.finance.ui.BaseBillDetailFragment;

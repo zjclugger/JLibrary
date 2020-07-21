@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/nav_title"
-        layout="@layout/detail_title" />
+        layout="@layout/tile_detail_title" />
 
     <TextView
         android:id="@+id/line1"

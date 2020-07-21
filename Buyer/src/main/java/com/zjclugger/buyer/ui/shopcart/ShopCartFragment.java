@@ -15,7 +15,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.persistence.entity.Shopcart;
 import com.zjclugger.buyer.ui.order.OrderSubmitFragment;

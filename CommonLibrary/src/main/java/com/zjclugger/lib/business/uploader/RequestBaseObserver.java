@@ -1,7 +1,6 @@
 package com.zjclugger.lib.business.uploader;
 
-import com.zjclugger.basiclib.Log;
-import com.zjclugger.lib.business.uploader.entity.UploadFile;
+import com.zjclugger.component.Log;
 
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;

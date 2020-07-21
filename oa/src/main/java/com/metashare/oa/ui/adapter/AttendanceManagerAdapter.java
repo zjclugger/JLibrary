@@ -3,7 +3,7 @@ package com.zjclugger.oa.ui.adapter;
 import androidx.annotation.NonNull;
 
 import com.chad.library.adapter.base.BaseSectionQuickAdapter;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.view.CircleImageTextView;
 import com.zjclugger.lib.view.recyclerview.ERPBaseViewHolder;
 import com.zjclugger.oa.R;

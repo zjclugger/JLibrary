@@ -5,7 +5,7 @@
     android:background="@color/bg_white"
     android:orientation="vertical">
 
-    <include layout="@layout/detail_title" />
+    <include layout="@layout/tile_detail_title" />
 
     <View style="@style/Line" />
 

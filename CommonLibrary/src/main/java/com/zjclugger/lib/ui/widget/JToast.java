@@ -27,35 +27,6 @@ public class JToast {
      * 消息提醒<br>
      *
      * @param context
-     * @param textResId
-     */
-    public JToast(Context context, int textResId) {
-        this(context, R.drawable.ic_information, textResId, false);
-    }
-
-    public JToast(Context context, int textResId, boolean isLongDuration) {
-        this(context, R.drawable.ic_information, textResId, isLongDuration);
-    }
-
-    public JToast(Context context, String message, boolean isLongDuration) {
-        this(context, R.drawable.ic_information, message, isLongDuration);
-    }
-
-
-    /**
-     * 消息提醒<br>
-     *
-     * @param context
-     * @param message
-     */
-    public JToast(Context context, String message) {
-        this(context, R.drawable.ic_information, message, false);
-    }
-
-    /**
-     * 消息提醒<br>
-     *
-     * @param context
      * @param iconResId
      * @param textResId
      */
@@ -129,7 +100,7 @@ public class JToast {
 
             if (!TextUtils.isEmpty(message)) {
                 mToast = new Toast(this.mContext);
-                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.toast_layout
+                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.layout_toast
                         , null);
                 ImageView toastIcon = (ImageView) toastView.findViewById(R.id.icon);
                 TextView toastValue = (TextView) toastView.findViewById(R.id.message);
@@ -160,7 +131,7 @@ public class JToast {
 
             if (!TextUtils.isEmpty(message)) {
                 mToast = new Toast(this.mContext);
-                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.toast_message_layout
+                View toastView = LayoutInflater.from(this.mContext).inflate(R.layout.layout_toast_message
                         , null);
                 TextView toastValue = (TextView) toastView.findViewById(R.id.message);
                 mToast.setDuration(mIsLongDuration ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);

@@ -1,1 +1,1 @@
-include ':CommonLibrary',':ComponentLib','Buyer'
+include ':CommonLibrary','Buyer'

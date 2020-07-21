@@ -2,7 +2,7 @@ package com.zjclugger.finance.ui;
 
 import android.os.Bundle;
 
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.finance.R;
 import com.zjclugger.finance.utils.FinanceConstants;
 import com.zjclugger.lib.base.BaseActivity;

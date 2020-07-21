@@ -1,5 +1,6 @@
 package com.zjclugger.lib.base;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.SparseArray;
 
@@ -44,7 +45,9 @@ public abstract class BaseMainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base_main);
         if (isTranslucentForImageViewInFragment()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
             findViewById(R.id.base_main_layout).setFitsSystemWindows(false);
+            }
             StatusBarUtil.setTranslucentForImageViewInFragment(this, null);
         }
         mBottomNavigation = findViewById(R.id.base_bottom_navigation);

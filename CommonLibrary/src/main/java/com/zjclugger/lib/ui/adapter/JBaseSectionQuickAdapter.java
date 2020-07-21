@@ -50,7 +50,7 @@ public abstract class JBaseSectionQuickAdapter<T extends JSectionEntity,
      */
     public void setEmptyView(boolean isGetFailed) {
         if (null != mEmptyViewGroup) {
-            setEmptyView(isGetFailed ? R.layout.error_view : R.layout.empty_view, mEmptyViewGroup);
+            setEmptyView(isGetFailed ? R.layout.layout_error_view : R.layout.layout_empty_view, mEmptyViewGroup);
         }
     }
 

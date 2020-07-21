@@ -54,5 +54,14 @@
             android:name="com.zjclugger.router.ui.FragmentSupportActivity"
             android:launchMode="standard"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.zjclugger.module.billupload.BillUploadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zjclugger.component.picture.MediaPreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

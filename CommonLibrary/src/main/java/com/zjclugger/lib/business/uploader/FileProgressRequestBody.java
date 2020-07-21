@@ -2,8 +2,6 @@ package com.zjclugger.lib.business.uploader;
 
 import android.util.Log;
 
-import com.zjclugger.lib.business.uploader.entity.UploadFile;
-
 import java.io.File;
 import java.io.IOException;
 

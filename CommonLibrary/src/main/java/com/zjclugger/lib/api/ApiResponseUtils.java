@@ -3,7 +3,7 @@ package com.zjclugger.lib.api;
 import android.text.TextUtils;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.R;
 import com.zjclugger.lib.api.entity.WrapperEntity;
 import com.zjclugger.lib.base.BaseApplication;

@@ -68,10 +68,6 @@ dependencies {
 
     testImplementation rootProject.ext.dependencies["junit"]
 
-    //Arouter
-    annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
-    //google
-    annotationProcessor rootProject.ext.dependencies["autoService"]
     //permission
     annotationProcessor rootProject.ext.dependencies["permissionProcessor"]
 
@@ -82,18 +78,14 @@ dependencies {
     //layout
     api rootProject.ext.dependencies["AutoSize"]
 
-    api rootProject.ext.dependencies["gson"]
     api rootProject.ext.dependencies["ECharts"]
-
-    //support
-    api rootProject.ext.dependencies["material"]
 
     //aac
     api rootProject.ext.dependencies["androidxCore"]
     api rootProject.ext.dependencies["androidxCoreRuntime"]
 
     //androidx
-    api rootProject.ext.dependencies["androidxConstraintlayout"]
+    //api rootProject.ext.dependencies["androidxConstraintlayout"]
     api rootProject.ext.dependencies["androidxAppcompat"]
     // api rootProject.ext.dependencies["androidxViewmodel"]
     api rootProject.ext.dependencies["androidxRoomCommon"]
@@ -102,35 +94,35 @@ dependencies {
     api rootProject.ext.dependencies["androidxRoomRxjava2"]
     api rootProject.ext.dependencies["androidxLifecycle-ext"]
 
-    //retrofit
-    api rootProject.ext.dependencies["retrofit"]
-    api rootProject.ext.dependencies["retrofitConverter-gson"]
-    api rootProject.ext.dependencies["retrofitConverter-scalars"]
-
-    //okhttp
-    api rootProject.ext.dependencies["okhttp3Logging-interceptor"]
-    api rootProject.ext.dependencies["okhttp3"]
-
-    //butter knife
-    api rootProject.ext.dependencies["butterknife"]
-
-    //arouter
-    api rootProject.ext.dependencies["arouter"]
-    annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
-
+    //google
+    api rootProject.ext.dependencies["material"]
+    api rootProject.ext.dependencies["gson"]
     api rootProject.ext.dependencies["autoService"]
     annotationProcessor rootProject.ext.dependencies["autoService"]
-
-    //banner
-    api rootProject.ext.dependencies["glide"]
-    // implementation rootProject.ext.dependencies["fresco"]
-    api rootProject.ext.dependencies["zxyRecovery"]
 
     //rxjava and rxandroid
     api rootProject.ext.dependencies["rxjava2"]
     api rootProject.ext.dependencies["rxandroid2"]
 
-    //api rootProject.ext.dependencies["exifinterface"]
+    //retrofit
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofitConverter-gson"]
+    api rootProject.ext.dependencies["retrofitConverter-scalars"]
+    api rootProject.ext.dependencies["retrofitAdapter-rxjava2"]
+
+    //okhttp
+    api rootProject.ext.dependencies["okhttp3Logging-interceptor"]
+    api rootProject.ext.dependencies["okhttp3"]
+
+    //arouter
+    api rootProject.ext.dependencies["arouter"]
+    annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
+
+    //banner
+    //api rootProject.ext.dependencies["banner-v2"]
+    api rootProject.ext.dependencies["glide"]
+
+    api rootProject.ext.dependencies["zxyRecovery"]
 
     //logger
     api rootProject.ext.dependencies["logger"]
@@ -144,15 +136,18 @@ dependencies {
     // api rootProject.ext.dependencies["SuperTextView"]
 
     api rootProject.ext.dependencies["JPickerView"]
+    api rootProject.ext.dependencies["JScanner"]
+    api rootProject.ext.dependencies["PictureSelector"]
 
     api rootProject.ext.dependencies["floatingactionbutton"]
-
-    api rootProject.ext.dependencies["retrofitAdapter-rxjava2"]
 
     api rootProject.ext.dependencies["LiveEventBus"]
 
     //SmartRefreshLayout
     api rootProject.ext.dependencies["SmartRefreshLayout"]
+
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
 }
 
 publish {

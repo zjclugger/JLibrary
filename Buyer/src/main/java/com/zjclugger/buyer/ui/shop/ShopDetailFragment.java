@@ -16,7 +16,7 @@ import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.utils.BuyerConstants;
 import com.zjclugger.buyer.webapi.response.ShopResult;
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.ui.adapter.JImageTextAdapter;
 import com.zjclugger.lib.utils.FragmentUtils;
 import com.zjclugger.lib.utils.ImageUtils;

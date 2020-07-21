@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 
 import com.zjclugger.lib.R;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.utils.ImageUtils;
 import com.zjclugger.lib.view.recyclerview.JBaseViewHolder;
 import com.zjclugger.router.utils.ARouterUtils;

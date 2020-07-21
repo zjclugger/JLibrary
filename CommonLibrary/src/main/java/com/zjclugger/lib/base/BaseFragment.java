@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.R;
 import com.zjclugger.lib.business.UserManager;
 import com.zjclugger.lib.business.UserPermission;

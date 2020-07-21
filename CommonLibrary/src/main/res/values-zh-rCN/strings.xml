@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">JLibrary</string>
     <string name="nav_drawer_open">nav_drawer_open</string>
     <string name="nav_drawer_close">nav_drawer_close</string>
 
@@ -8,6 +9,9 @@
 
     <string name="text_confirm">确认</string>
     <string name="text_cancel">取消</string>
+
+    <string name="pic_selector_upload">立即上传</string>
+    <string name="text_pic_select">图片选择</string>
 
     <string name="deleting">正在删除...</string>
     <string name="delete_success">删除成功</string>

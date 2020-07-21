@@ -4,7 +4,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.view.recyclerview.ERPGridLayoutManager;
 import com.zjclugger.oa.R;

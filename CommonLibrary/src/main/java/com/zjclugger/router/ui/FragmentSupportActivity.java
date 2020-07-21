@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.R;
 import com.zjclugger.lib.base.BaseActivity;
 import com.zjclugger.lib.base.ISetStatusBarStyle;

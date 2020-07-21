@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.tabs.TabLayout;
 import com.jeremyliao.liveeventbus.LiveEventBus;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.base.BaseFragment;
 import com.zjclugger.lib.business.User;
 import com.zjclugger.lib.business.UserManager;

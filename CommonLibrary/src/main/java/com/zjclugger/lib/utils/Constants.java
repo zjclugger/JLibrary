@@ -15,10 +15,7 @@ public class Constants {
      * 传递数据时的KEY值
      */
     public class Keywords {
-        public static final String KEY_HR_STATUS_LIST = "hr_status_list";
-        public static final String KEY_STAFF_DETAIL = "staff_detail";
         public static final String KEY_PERSONAL_PAYROLL_ID = "personal_payroll_id";
-        public static final String KEY_COMPANY_PAYROLL_ID = "company_payroll_id";
         public static final String KEY_SELECTED_PICTURE = "selected_picture_list";
         /**
          * 通讯录显示模式(选择模式/查看模式)

@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.R;
 import com.zjclugger.lib.ui.adapter.JBaseQuickAdapter;
 import com.zjclugger.lib.utils.Constants;

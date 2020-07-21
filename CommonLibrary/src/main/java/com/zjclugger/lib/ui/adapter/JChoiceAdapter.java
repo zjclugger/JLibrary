@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.zjclugger.lib.R;
-import com.zjclugger.lib.entity.common.JChoiceItem;
+import com.zjclugger.lib.entity.JChoiceItem;
 import com.zjclugger.lib.view.recyclerview.JBaseViewHolder;
 
 import java.util.List;

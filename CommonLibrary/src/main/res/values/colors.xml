@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#3C9EFF</color>
 
-    <!-- 以下为使用的颜色 -->
     <!-- Global -->
+    <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_white">#DDFFFFFF</color>
     <color name="white_6">#9AFFFFFF</color>
@@ -13,44 +13,47 @@
     <color name="black">#FF000000</color>
     <color name="dark_black">#FF333333</color>
     <color name="light_black">#FF666666</color>
+    <color name="darker_gray">#FF4A4A4A</color>
+    <color name="dark_gray">#FF999999</color>
+    <color name="light_gray">#FFCCCCCC</color>
+    <color name="lighter_gray">#FFE2E2E2</color>
+    <!-- red -->
     <color name="pink">#FFF0B8B8</color>
     <color name="light_pink">#fdbcbc</color>
     <color name="red">#FFFF0000</color>
     <color name="light_red">#FFE11212</color>
     <color name="mid_red">#FFf23939</color>
-    <color name="darker_gray">#FF4A4A4A</color>
-    <color name="dark_gray">#FF999999</color>
-    <color name="light_gray">#FFCCCCCC</color>
-    <color name="lighter_gray">#FFE2E2E2</color>
+    <!-- blue -->
     <color name="blue">#0000ff</color>
     <color name="dark_blue">#FF0D6BC6</color>
     <color name="light_blue">#FF2283E2</color>
     <color name="lighter_blue">#FF38A0FF</color>
     <color name="lightest_blue">#FFE5F5FF</color>
     <color name="lightest_sky_blue">#FF01FFFF</color>
-
+    <!-- green -->
     <color name="green">#00FF00</color>
     <color name="dark_green">#FF006400</color>
     <color name="light_green">#FF32cd32</color>
     <color name="lighter_green">#FF7cfc00</color>
     <color name="lightest_green">#9acd32</color>
+    <!-- yellow -->
+    <color name="yellow">#FFFF9900</color>
+    <color name="dark_yellow">#FFff5500</color>
+    <color name="light_yellow">#FFFAD69F</color>
+    <color name="lighter_yellow">#FFf4e498</color>
+    <!-- purple -->
+    <color name="purple">#FF7A418E</color>
+    <color name="lighter_purple">#FFA989FE</color>
+    <color name="lightest_purple">#FFA1A6FE</color>
 
     <color name="login">#17A4F7</color>
     <color name="page_backgroud">#FFEEEEEE</color>
     <color name="line_font">#FFCCCCCC</color>
     <color name="list_line">#FFDDDDDD</color>
     <color name="list_press">#FFF8F8F8</color>
-    <color name="yellow">#FFFF9900</color>
-    <color name="dark_yellow">#FFff5500</color>
-    <color name="light_yellow">#FFFAD69F</color>
-    <color name="lighter_yellow">#FFf4e498</color>
-    <color name="purple">#FF7A418E</color>
-    <color name="lighter_purple">#FFA989FE</color>
-    <color name="lightest_purple">#FFA1A6FE</color>
     <color name="color_no_device">#999999</color>
     <color name="half_transparent">#99000000</color>
     <color name="darker_transparent">#55000000</color>
-    <color name="transparent">#00000000</color>
 
     <!-- drop down view -->
     <color name="gray">#FF888888</color>
@@ -108,12 +111,12 @@
     <color name="background_content">#f5f5f5</color>
 
     <!-- 权限申请 -->
-    <color name="permissionColorGreen">#41c236</color>
-    <color name="permissionColorWhite">#ffffff</color>
-    <color name="permissionBgColorGreenLight">#44A49C</color>
-    <color name="permissionBgColorBlue">#ee447AA4</color>
+    <color name="permission_color_green">#41c236</color>
+    <color name="permission_color_white">#ffffff</color>
+    <color name="permission_bg_color_green_light">#44A49C</color>
+    <color name="permission_bg_color_blue">#ee447AA4</color>
 
-    <!-- ERP -->
+    <!-- app -->
     <color name="navigation_selected">#FFEF6054</color>
     <color name="navigation_normal">#FF8A8A8A</color>
     <color name="navigation_selected_blue">#FF3C9EFF</color>

@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.ui.vm.BuyerViewModel;
 import com.zjclugger.lib.api.ApiResponse;

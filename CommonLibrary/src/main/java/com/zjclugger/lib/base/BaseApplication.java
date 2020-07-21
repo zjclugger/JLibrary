@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.multidex.MultiDex;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.zjclugger.basiclib.CrashHandler;
+import com.zjclugger.component.CrashHandler;
 import com.zjclugger.lib.BuildConfig;
 import com.zjclugger.lib.annotation.ModuleAnnotation;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -167,7 +167,7 @@ public class BaseApplication extends Application {
                 // print out. Default LogCat
                 .tag("ERP")   // (Optional) Global tag for every log. Default PRETTY_LOGGER
                 .build();
-        com.zjclugger.basiclib.Log.addLogAdapter(new AndroidLogAdapter(formatStrategy) {
+        com.zjclugger.component.Log.addLogAdapter(new AndroidLogAdapter(formatStrategy) {
             @Override
             public boolean isLoggable(int priority, @Nullable String tag) {
                 return BuildConfig.DEBUG;

@@ -45,7 +45,7 @@ public abstract class JBaseQuickAdapter<T, K extends JBaseViewHolder> extends Ba
     public void setEmptyView(boolean isEmpty) {
         if (null != mEmptyViewGroup) {
             View view =
-                    LayoutInflater.from(mEmptyViewGroup.getContext()).inflate(R.layout.error_view
+                    LayoutInflater.from(mEmptyViewGroup.getContext()).inflate(R.layout.layout_error_view
                     , mEmptyViewGroup, false);
             TextView tvDesc = view.findViewById(R.id.tv_desc);
             ImageView ivDesc = view.findViewById(R.id.iv_desc);

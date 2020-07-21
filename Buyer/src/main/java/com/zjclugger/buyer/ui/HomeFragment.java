@@ -24,7 +24,7 @@ import com.zjclugger.buyer.ui.shop.ShopListFragment;
 import com.zjclugger.buyer.webapi.response.GoodsResult;
 import com.zjclugger.buyer.webapi.response.ModuleResult;
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.utils.ViewUtils;
 import com.zjclugger.lib.utils.WidgetUtils;
 import com.zjclugger.lib.view.JSearchView;
@@ -39,6 +39,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * 首页@title <br>

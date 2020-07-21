@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.zjclugger.lib.R;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.utils.ViewUtils;
 import com.zjclugger.lib.view.banner.BannerImageHolder;
 import com.youth.banner.adapter.BannerAdapter;

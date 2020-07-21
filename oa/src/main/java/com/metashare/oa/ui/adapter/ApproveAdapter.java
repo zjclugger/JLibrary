@@ -5,7 +5,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.zjclugger.basiclib.Log;
+import com.zjclugger.component.Log;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.ERPUtils;
 import com.zjclugger.lib.utils.WidgetUtils;

@@ -43,5 +43,5 @@ dependencies {
 
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     annotationProcessor rootProject.ext.dependencies["autoService"]
-    //annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
+    annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
 }
