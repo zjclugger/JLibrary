@@ -21,7 +21,7 @@ import com.zjclugger.lib.business.UserManager;
 import com.zjclugger.lib.ui.adapter.ERPBaseQuickAdapter;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.WidgetUtils;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.router.utils.ARouterUtils;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
@@ -53,7 +53,7 @@ public abstract class BaseBillFragment extends BaseFragment {
     @BindView(R2.id.original_list_tabs)
     protected TabLayout mTabLayout;
     @BindView(R2.id.bill_recycler_view)
-    protected ExtendsRecyclerView mBillRecyclerView;
+    protected ExtendRecyclerView mBillRecyclerView;
 
     protected ERPBaseQuickAdapter mAdapter;
     protected boolean mIsPagingQuery;

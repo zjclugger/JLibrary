@@ -9,14 +9,14 @@
 
     <include
         android:id="@+id/nav_layout"
-        layout="@layout/detail_title" />
+        layout="@layout/tile_detail_title" />
 
     <TextView
         android:id="@+id/line_1"
         style="@style/Line"
         android:layout_below="@id/nav_layout" />
 
-    <com.zjclugger.lib.view.ExtendsRecyclerView
+    <com.zjclugger.lib.view.ExtendRecyclerView
         android:id="@+id/order_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -113,7 +113,7 @@ public abstract class BaseLoginActivity extends AppCompatActivity {
                 mLoginModeView.setText("账号密码登录");
                 mLoginButton.setText("新用户注册");
 
-                /*  ARouterUtils.openDetailFragment(LoginActivity.this,
+                /*  ARouterUtils.openFragment(LoginActivity.this,
                     UserRegisterFragment.class.getName(), null, R.color.bg_white, false);*/
             }
         });

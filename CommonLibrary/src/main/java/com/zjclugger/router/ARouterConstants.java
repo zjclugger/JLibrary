@@ -8,43 +8,31 @@ package com.zjclugger.router;
 public class ARouterConstants {
 
     public class Path {
-
-        public static final String MAIN_PAGE = "/erp/main";
-
         /**
          * 登录页面
          */
         public static final String USER_LOGIN = "/app/login";
 
-        //====业务公共组件==========================================================================
-        /**
-         * 员工列表
-         */
-        public static final String COM_STAFF_LIST = "/component/staffList";
-        public static final String COM_UPLOAD_BILL = "/component/uploadBill";
+
+        //关于报【There is no route match the path】错误的原因分析
+        //1.路由路径至少要两级，相同module下的一级路径名称相同，不同module下的一级路径名称不能相同，否则报以上错误
+        //2.在【defaultConfig】节点中添加 {
+        //         .....
+        //        javaCompileOptions {
+        //            annotationProcessorOptions {
+        //                arguments = [AROUTER_MODULE_NAME: project.getName()]
+        //            }
+        //        }
+        //    }
+        //3.在app的【dependencies】中添加依赖
+        //====业务组件==========================================================================
         public static final String COM_SELECT_MEDIA = "/component/selectMedia";
         public static final String COM_PREVIEW_MEDIA = "/component/previewMedia";
-        public static final String COM_USER_PROFILE = "/component/userProfile";
         public static final String COM_FRAGMENT_ACTIVITY = "/component/fragmentActivity";
-        public static final String COM_CONTACTS_LIST = "/component/contactsList";
-        public static final String COM_SELECT_DEPART_POST = "/component/selectDepartPost";
-        //===业务组件（子系统）=====================================================================
-        /**
-         * 人事系统
-         */
-        public static final String SUB_SYSTEM_HR = "/hr/main";
-        /**
-         * 工资系统
-         */
-        public static final String SUB_SYSTEM_SALARY = "/salary/main";
-        /**
-         * 财务系统
-         */
-        public static final String SUB_SYSTEM_FINANCE = "/finance/main";
-        /**
-         * OA系统
-         */
-        public static final String SUB_SYSTEM_OA = "/oa/main";
+
+        //===模块组件（子系统）=====================================================================
+        public static final String MODULE_UPLOAD_BILL = "/module/uploadBill";
+        public static final String MODULE_SELECT_DEPART_POST = "/module/selectDepartPost";
     }
 
     /**
@@ -96,5 +84,4 @@ public class ARouterConstants {
         public static final String KEY_FSA_FRAGMENT_LIGHT = "fsa_fragment_is_light";
         public static final String KEY_FSA_FRAGMENT_PARAMS = "fsa_fragment_params";
     }
-
 }

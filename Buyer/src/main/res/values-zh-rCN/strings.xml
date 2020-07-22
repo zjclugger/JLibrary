@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">买家版</string>
-	<string name="copyright">西安麦特赛尔软件技术有限公司 版权所有</string>
-	<string name="sub_system_hr">HR系统</string>
 	<!-- buyer -->
 	<string name="menu_home">首页</string>
 	<string name="menu_order">订单</string>

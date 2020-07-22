@@ -67,7 +67,7 @@ public class SellerHomeFragment extends BaseFragment {
 
             Bundle params = new Bundle();
             params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE, goodsResult);
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     GoodsManagerFragment.class.getName(), params, R.color.bg_white, false);
         });
 
@@ -92,12 +92,12 @@ public class SellerHomeFragment extends BaseFragment {
 
             Bundle params = new Bundle();
             params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE, goodsResult);
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     GoodsManagerFragment.class.getName(), params, R.color.bg_white, false);
         });
 
         mGoodsCategoryView.setOnClickListener(v -> {
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     CategoryManageFragment.class.getName(), null, R.color.bg_white, false);
 
         });

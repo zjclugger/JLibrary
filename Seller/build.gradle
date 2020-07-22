@@ -48,7 +48,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
 
     implementation project(path: ':CommonLibrary')
-    implementation project(path: ':ComponentLib')
 
     if (rootProject.ext.isRunAll) {
         //implementation project(path: ':Seller')
@@ -60,6 +59,7 @@ dependencies {
     //banner
    // implementation rootProject.ext.dependencies["banner"]
 
+    implementation rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
     annotationProcessor rootProject.ext.dependencies["autoService"]

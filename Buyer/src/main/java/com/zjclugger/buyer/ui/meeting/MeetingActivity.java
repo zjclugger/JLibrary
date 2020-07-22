@@ -14,7 +14,7 @@ public class MeetingActivity extends BaseActivity {
     @BindView(R.id.edit_query_start_time)
     EditText mQueryStartTimeEditView;
     @BindView(R.id.meetings_recycler_view)
-    ExtendsRecyclerView mRecyclerView;
+    ExtendRecyclerView mRecyclerView;
     JRecyclerViewPager mRecyclerViewPager;
     MeetingListAdapter mMeetingAdapter;
     List<ReminderMeeting> mReminderMeetingList = new ArrayList<>();
@@ -66,7 +66,7 @@ public class MeetingActivity extends BaseActivity {
                 //delete
                 mMeetingAdapter.remove(mPosition);
             } else {
-                if (ExtendsRecyclerView.NEW_MEETING_POSITION == mPosition) {
+                if (ExtendRecyclerView.NEW_MEETING_POSITION == mPosition) {
                     mMeetingAdapter.addData(mTempReminderMeeting);
                     //add
                 } else {
@@ -110,7 +110,7 @@ public class MeetingActivity extends BaseActivity {
         mTitleRightView.setText("预约会议");
         mTitleRightView.setOnClickListener(v -> {
             //打开新建会议室界面
-            mPosition = ExtendsRecyclerView.NEW_MEETING_POSITION;
+            mPosition = ExtendRecyclerView.NEW_MEETING_POSITION;
             startActivityForResult(new Intent(this, MeetingManageActivity.class), 0);
         });
 

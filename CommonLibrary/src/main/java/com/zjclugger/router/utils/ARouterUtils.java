@@ -40,9 +40,9 @@ public class ARouterUtils {
      * @param fragmentClassName
      * @param params
      */
-    public static void openDetailFragment(Activity activity, String fragmentClassName,
+    public static void openFragment(Activity activity, String fragmentClassName,
                                           Bundle params) {
-        openDetailFragment(activity, fragmentClassName, params, -1, false);
+        openFragment(activity, fragmentClassName, params, -1, false);
     }
 
     /**
@@ -54,7 +54,7 @@ public class ARouterUtils {
      * @param barColor          状态栏颜色
      * @param isLightMode       状态栏字体是否为白色
      */
-    public static void openDetailFragment(Activity activity, String fragmentClassName,
+    public static void openFragment(Activity activity, String fragmentClassName,
                                           Bundle params, int barColor, boolean isLightMode) {
         ARouter.getInstance().build(ARouterConstants.Path.COM_FRAGMENT_ACTIVITY)
                 .withString(ARouterConstants.KeyWord.KEY_FSA_CLASS_NAME, fragmentClassName)
@@ -124,7 +124,7 @@ public class ARouterUtils {
     }
 
     public static void navigateBillUpload(Activity activity, String companyId, String title) {
-        ARouter.getInstance().build(ARouterConstants.Path.COM_UPLOAD_BILL)
+        ARouter.getInstance().build(ARouterConstants.Path.MODULE_UPLOAD_BILL)
                 .withString(ARouterConstants.KeyWord.KEY_COMPANY_ID, companyId)
                 .withString(ARouterConstants.KeyWord.KEY_MEDIA_TITLE_TEXT, title)
                 .navigation(activity, Constants.KeyCode.REQUEST_CODE_UPLOAD,

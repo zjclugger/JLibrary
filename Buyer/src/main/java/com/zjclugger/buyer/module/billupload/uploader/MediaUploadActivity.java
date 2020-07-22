@@ -67,7 +67,7 @@ public abstract class MediaUploadActivity extends BaseActivity {
         mReasonEditView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouterUtils.openDetailFragment(MediaUploadActivity.this,
+                ARouterUtils.openFragment(MediaUploadActivity.this,
                         BillReasonSelectFragment.class.getName(), null, R.color.white, false);
             }
         });

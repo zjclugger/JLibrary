@@ -142,7 +142,7 @@ public abstract class BaseListFragment extends BaseFragment {
 
   /*  @Override
     public void onSearchViewClick() {
-     *//*   ARouterUtils.openDetailFragment(getActivity(), SearchKeywordFragment.class.getName(),
+     *//*   ARouterUtils.openFragment(getActivity(), SearchKeywordFragment.class.getName(),
                 null, R.color.white, false);*//*
     }
 
@@ -153,7 +153,7 @@ public abstract class BaseListFragment extends BaseFragment {
 
     @Override
     public void onFilterViewClick() {
-       *//* ARouterUtils.openDetailFragment(getActivity(), SearchFilterFragment.class.getName(), null
+       *//* ARouterUtils.openFragment(getActivity(), SearchFilterFragment.class.getName(), null
                 , R.color.white, false);*//*
     }*/
 }

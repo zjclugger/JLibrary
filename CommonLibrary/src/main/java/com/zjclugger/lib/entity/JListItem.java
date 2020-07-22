@@ -38,6 +38,10 @@ public class JListItem<T> implements Parcelable, IPickerViewData {
         this(id, text, value, selected, -1, null);
     }
 
+    public JListItem(int id, String text, T value, Object tag) {
+        this(id, text, value, false, -1, tag);
+    }
+
     public JListItem(int id, String text, T value) {
         this(id, text, value, false, -1, null);
     }

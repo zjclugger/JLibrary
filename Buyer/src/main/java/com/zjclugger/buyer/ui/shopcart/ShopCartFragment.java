@@ -382,7 +382,7 @@ public class ShopCartFragment extends BaseFragment {
                 params.putSerializable(BuyerConstants.Keywords.KEY_ORDER_SHOP_GOODS_LIST,
                         goodsList);
                 params.putDouble(BuyerConstants.Keywords.KEY_ORDER_TOTAL_PRICE, mTotalPrice);
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         OrderSubmitFragment.class.getName(), params, R.color.white, false);
                 break;
             case R.id.share_goods:

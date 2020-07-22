@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/nav_layout"
-        layout="@layout/detail_title"
+        layout="@layout/tile_detail_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
 
-    <com.zjclugger.lib.view.ExtendsRecyclerView
+    <com.zjclugger.lib.view.ExtendRecyclerView
         android:id="@+id/goods_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

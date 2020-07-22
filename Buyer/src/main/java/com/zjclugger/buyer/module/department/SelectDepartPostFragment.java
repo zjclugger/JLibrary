@@ -25,7 +25,7 @@ import java.util.List;
  * Created by King.Zi on 2020/03/10.<br>
  * Copyright (c) 2020 zjclugger.com
  */
-@Route(path = ARouterConstants.Path.COM_SELECT_DEPART_POST)
+@Route(path = ARouterConstants.Path.MODULE_SELECT_DEPART_POST)
 public class SelectDepartPostFragment extends BaseFragment {
     private static final String TAG = "SelectDepartPost";
     DepartViewModel mViewModel;

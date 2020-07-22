@@ -46,7 +46,7 @@ public class UserProfileFragment extends BaseFragment {
     @Override
     public void initViews() {
         initDetailTitleViews("个人中心", null, null, false);
-        mPayModeView.setOnClickListener(v -> ARouterUtils.openDetailFragment(getActivity(),
+        mPayModeView.setOnClickListener(v -> ARouterUtils.openFragment(getActivity(),
                 PayModeFragment.class.getName(), null, R.color.bg_white, false));
 
 
@@ -54,7 +54,7 @@ public class UserProfileFragment extends BaseFragment {
             mUserNameView.setText(UserManager.getInstance().getCurrentUser().getUserName());
             //mUserPostView.setText(UserManager.getInstance().getCurrentUser().getUid());
         }
-     /*   mPasswordView.setOnClickListener(v -> ARouterUtils.openDetailFragment(getActivity(),
+     /*   mPasswordView.setOnClickListener(v -> ARouterUtils.openFragment(getActivity(),
                 UserPasswordFragment.class.getName(), null));
         mCheckUpgradeView.setOnClickListener(v -> WidgetUtils.toastMessage(mContext,
                 R.string.developing));*/

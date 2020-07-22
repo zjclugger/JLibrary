@@ -42,7 +42,7 @@ import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
-@Route(path = ARouterConstants.Path.COM_UPLOAD_BILL)
+@Route(path = ARouterConstants.Path.MODULE_UPLOAD_BILL)
 public class BillUploadActivity extends MediaUploadActivity {
     public static final String TAG = "BillUpload";
     public static final long MAX_FILE_SIZE = 1024 * 1024 * 10; //10M

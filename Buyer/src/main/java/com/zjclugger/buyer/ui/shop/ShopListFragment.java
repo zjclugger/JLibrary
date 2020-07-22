@@ -141,14 +141,14 @@ public class ShopListFragment extends BaseListFragment {
                 Bundle params = new Bundle();
                 params.putParcelable(BuyerConstants.Keywords.KEY_SHOP_INFO,
                         mShopList.get(position));
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         ShopDetailFragment.class.getName(), params, R.color.white, false);
 
            /*     Bundle params = new Bundle();
                 params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE,
                         mFoodShopList.get(position));
                 params.putBoolean(SellerConstants.Keywords.KEY_GOODS_MANAGE_READ_ONLY, true);
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         GoodsManagerFragment.class.getName(), params, R.color.bg_white,
                         false);*/
               /*  Bundle bundle = new Bundle();
@@ -159,7 +159,7 @@ public class ShopListFragment extends BaseListFragment {
                 bundle.putString(FinanceConstants.Keywords.KEY_ORIGINAL_UPLOAD_DATE,
                         mFoodShopList.get(position).getUploadDate());
 
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         OriginalDetailFragment.class.getName(), bundle, R.color.white, false);*/
             }
         });

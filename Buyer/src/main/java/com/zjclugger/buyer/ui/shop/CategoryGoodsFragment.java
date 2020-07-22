@@ -88,7 +88,7 @@ public class CategoryGoodsFragment extends BaseFragment {
                 public void onClick(View v) {
                     WidgetUtils.toast(mContext, "点击了购物车", false);
 
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             ShopCartFragment.class.getName(), null, R.color.white, false);
                 }
             });

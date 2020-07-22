@@ -90,7 +90,7 @@ public class OrderSubmitFragment extends BaseFragment {
             mPayView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             CashierFragment.class.getName(), mArguments, R.color.white, false);
                 }
             });

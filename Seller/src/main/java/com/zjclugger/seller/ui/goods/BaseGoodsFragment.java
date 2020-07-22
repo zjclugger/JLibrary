@@ -18,7 +18,7 @@ import com.zjclugger.lib.business.UserManager;
 import com.zjclugger.lib.ui.adapter.JBaseQuickAdapter;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.WidgetUtils;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.seller.R;
 import com.zjclugger.seller.ui.vm.SellerViewModel;
 import com.zjclugger.seller.utils.SellerConstants;
@@ -52,7 +52,7 @@ public abstract class BaseGoodsFragment extends BaseFragment {
     @BindView(R.id.goods_list_tabs)
     protected TabLayout mTabLayout;
     @BindView(R.id.goods_recycler_view)
-    protected ExtendsRecyclerView mGoodsRecyclerView;
+    protected ExtendRecyclerView mGoodsRecyclerView;
 
     protected JBaseQuickAdapter mAdapter;
     protected boolean mIsPagingQuery;
@@ -175,7 +175,7 @@ public abstract class BaseGoodsFragment extends BaseFragment {
 
     @Override
     public void onSearchViewClick() {
-     /*   ARouterUtils.openDetailFragment(getActivity(), SearchKeywordFragment.class.getName(),
+     /*   ARouterUtils.openFragment(getActivity(), SearchKeywordFragment.class.getName(),
                 null, R.color.white, false);*/
     }
 
@@ -186,7 +186,7 @@ public abstract class BaseGoodsFragment extends BaseFragment {
 
     @Override
     public void onFilterViewClick() {
-       /* ARouterUtils.openDetailFragment(getActivity(), SearchFilterFragment.class.getName(), null
+       /* ARouterUtils.openFragment(getActivity(), SearchFilterFragment.class.getName(), null
                 , R.color.white, false);*/
     }
 }

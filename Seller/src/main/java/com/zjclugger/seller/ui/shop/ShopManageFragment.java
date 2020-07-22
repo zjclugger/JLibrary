@@ -38,7 +38,7 @@ public class ShopManageFragment extends BaseFragment {
     public void initViews() {
         initDetailTitleViews("门店运营", null, null, false);
         mGoodsManageView.setOnClickListener(v -> {
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     GoodsListManageFragment.class.getName(), null, R.color.bg_white, false);
         });
     }

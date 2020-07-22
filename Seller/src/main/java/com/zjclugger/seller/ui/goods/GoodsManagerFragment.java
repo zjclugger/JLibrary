@@ -16,10 +16,11 @@ import androidx.databinding.DataBindingUtil;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.bigkoo.pickerview.jview.OptionsPickerView;
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JMediaItem;
+import com.zjclugger.lib.entity.JMediaItem;
 import com.zjclugger.lib.ui.widget.JAlertDialog;
 import com.zjclugger.lib.utils.CommonUtils;
 import com.zjclugger.lib.utils.FragmentUtils;
+import com.zjclugger.lib.utils.ViewUtils;
 import com.zjclugger.lib.utils.WidgetUtils;
 import com.zjclugger.router.ARouterConstants;
 import com.zjclugger.seller.R;
@@ -157,7 +158,7 @@ public class GoodsManagerFragment extends BaseFragment {
         mAlertDialog = new JAlertDialog(mContext);
 
         //mBinding.letvGoodsName.getEditTextView()
-
+        ViewUtils.setReadOnly(mBinding.elvvGoodsCategory.getValueView());
         mCategoryPickerView = new OptionsPickerView(mContext, (options1, options2, options3, v) -> {
             if (mCategoryList.get(options1).getId() != mGoodsResultCache.getCategoryId()) {
                 mCategoryId = mCategoryList.get(options1).getId();

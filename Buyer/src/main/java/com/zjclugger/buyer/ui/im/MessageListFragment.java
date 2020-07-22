@@ -49,7 +49,7 @@ public class MessageListFragment extends BaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 WidgetUtils.toast(mContext, "点击-查询详情", false);
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         ChatFragment.class.getName(), null, R.color.white, false);
 
             }
@@ -103,7 +103,7 @@ public class MessageListFragment extends BaseFragment {
                     params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE,
                             mFoodShopList.get(position));
                     params.putBoolean(SellerConstants.Keywords.KEY_GOODS_MANAGE_READ_ONLY, true);
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             GoodsManagerFragment.class.getName(), params, R.color.bg_white,
                             false);*//*
          *//*  Bundle bundle = new Bundle();
@@ -114,7 +114,7 @@ public class MessageListFragment extends BaseFragment {
                     bundle.putString(FinanceConstants.Keywords.KEY_ORIGINAL_UPLOAD_DATE,
                             mFoodShopList.get(position).getUploadDate());
 
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             OriginalDetailFragment.class.getName(), bundle, R.color.white, false)
                             ;*//*
                 }

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JListItem;
+import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.ui.widget.JAlertDialog;
 import com.zjclugger.lib.utils.ViewUtils;
 import com.zjclugger.lib.utils.WidgetUtils;

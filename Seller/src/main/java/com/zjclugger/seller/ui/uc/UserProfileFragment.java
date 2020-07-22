@@ -51,7 +51,7 @@ public class UserProfileFragment extends BaseFragment {
     @Override
     public void initViews() {
         // initDetailTitleViews("个人中心", null, null, false);
-      /*  mShopSettingView.setOnClickListener(v -> ARouterUtils.openDetailFragment(getActivity(),
+      /*  mShopSettingView.setOnClickListener(v -> ARouterUtils.openFragment(getActivity(),
                 PayModeFragment.class.getName(), null, R.color.bg_white, false));
 */
 
@@ -59,7 +59,7 @@ public class UserProfileFragment extends BaseFragment {
             mShopNameView.setText("店铺名");
             mShopStatusView.setText("营业中");
         }
-     /*   mPasswordView.setOnClickListener(v -> ARouterUtils.openDetailFragment(getActivity(),
+     /*   mPasswordView.setOnClickListener(v -> ARouterUtils.openFragment(getActivity(),
                 UserPasswordFragment.class.getName(), null));
         mCheckUpgradeView.setOnClickListener(v -> WidgetUtils.toastMessage(mContext,
                 R.string.developing));*/
@@ -69,7 +69,7 @@ public class UserProfileFragment extends BaseFragment {
             public void onClick(View v) {
                 Bundle params = new Bundle();
                 params.putBoolean(SellerConstants.Keywords.KEY_IS_JOINED, true);
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         ShopSettingFragment.class.getName(), params, R.color.bg_white, false);
             }
         });
@@ -77,11 +77,11 @@ public class UserProfileFragment extends BaseFragment {
         mUserNOManageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* ARouterUtils.openDetailFragment(getActivity(),
+               /* ARouterUtils.openFragment(getActivity(),
                         UserInfoFragment.class.getName(), null, R.color.bg_white, false);*/
                 Bundle params = new Bundle();
                 params.putBoolean(SellerConstants.Keywords.KEY_IS_JOINED, false);
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         ShopSettingFragment.class.getName(), params, R.color.bg_white, false);
                 //startActivity(new Intent(LoadingActivity.this, ShopJoinActivity.class));
             }

@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/title_layout"
-        layout="@layout/detail_title" />
+        layout="@layout/tile_detail_title" />
 
     <LinearLayout
         android:id="@+id/company_logo_layout"

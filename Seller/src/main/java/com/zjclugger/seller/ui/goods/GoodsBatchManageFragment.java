@@ -15,7 +15,7 @@ import com.zjclugger.lib.ui.widget.JDialog;
 import com.zjclugger.lib.utils.Constants;
 import com.zjclugger.lib.utils.ViewUtils;
 import com.zjclugger.lib.utils.WidgetUtils;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.seller.R;
 import com.zjclugger.seller.webapi.response.GoodsCategoryResult;
 import com.zjclugger.seller.webapi.response.GoodsResult;
@@ -35,7 +35,7 @@ public class GoodsBatchManageFragment extends BaseListFragment {
     private static final String TAG = "InvoiceList";
 
     @BindView(R.id.goods_recycler_view)
-    ExtendsRecyclerView mRecyclerView;
+    ExtendRecyclerView mRecyclerView;
     @BindView(R.id.layout_left_button)
     Button mToShelvesButton;
     @BindView(R.id.layout_right_button)
@@ -159,7 +159,7 @@ public class GoodsBatchManageFragment extends BaseListFragment {
     }
 
     @Override
-    public ExtendsRecyclerView getRecyclerView() {
+    public ExtendRecyclerView getRecyclerView() {
         return mRecyclerView;
     }
 

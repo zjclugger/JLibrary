@@ -54,12 +54,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    api project(path: ':CommonLibrary')
-
-    if (rootProject.ext.isRunAll) {
-        //implementation project(path: ':Seller')
-        //implementation project(path: ':oa')
-    }
+    implementation project(path: ':CommonLibrary')
 
     implementation rootProject.ext.dependencies["ShortcutBadger"]
     implementation rootProject.ext.dependencies["MagicIndicator"]
@@ -74,7 +69,6 @@ dependencies {
     //butter knife
     implementation rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
-    //annotationProcessor rootProject.ext.dependencies["arouterCompiler"]
     annotationProcessor rootProject.ext.dependencies["autoService"]
     annotationProcessor rootProject.ext.dependencies["permissionProcessor"]
     annotationProcessor rootProject.ext.dependencies["androidxRoomCompiler"]

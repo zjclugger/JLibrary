@@ -9,7 +9,7 @@ import androidx.appcompat.widget.SearchView;
 import com.google.android.material.tabs.TabLayout;
 import com.zjclugger.lib.base.BaseListFragment;
 import com.zjclugger.lib.utils.Constants;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.lib.view.JSearchView;
 import com.zjclugger.seller.R;
 import com.zjclugger.seller.webapi.response.OrderGoodsResult;
@@ -33,7 +33,7 @@ public class OrderManageFragment extends BaseListFragment {
     @BindView(R.id.tab_list_tabs)
     TabLayout mTabLayout;
     @BindView(R.id.order_recycler_view)
-    ExtendsRecyclerView mOrderRecyclerView;
+    ExtendRecyclerView mOrderRecyclerView;
     @BindView(R.id.search_view)
     JSearchView mSearchView;
 
@@ -180,7 +180,7 @@ public class OrderManageFragment extends BaseListFragment {
     }
 
     @Override
-    public ExtendsRecyclerView getRecyclerView() {
+    public ExtendRecyclerView getRecyclerView() {
         return mOrderRecyclerView;
     }
 

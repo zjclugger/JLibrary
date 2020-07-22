@@ -171,7 +171,7 @@ public class OrderListAdapter extends BaseExpandableListAdapter {
                     //TODO:应该根据订单状态来判断，现在暂时传递tab
                     mParams = getParams(groupPosition);
                     mParams.putInt(BuyerConstants.Keywords.KEY_ORDER_STATUS, mCurrentTab);
-                    ARouterUtils.openDetailFragment(mActivity,
+                    ARouterUtils.openFragment(mActivity,
                             OrderDetailFragment.class.getName(), mParams, R.color.white, false);
                     mOrderTotalAmount = 0d;
                 });
@@ -179,7 +179,7 @@ public class OrderListAdapter extends BaseExpandableListAdapter {
                     childViewHolder.mFunctionView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            ARouterUtils.openDetailFragment(mActivity,
+                            ARouterUtils.openFragment(mActivity,
                                     OrderSubmitFragment.class.getName(), getParams(groupPosition)
                                     , R.color.white, false);
                             mOrderTotalAmount = 0d;
@@ -211,7 +211,7 @@ public class OrderListAdapter extends BaseExpandableListAdapter {
                 childViewHolder.mEvaluateView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        ARouterUtils.openDetailFragment(mActivity,
+                        ARouterUtils.openFragment(mActivity,
                                 OrderEvaluateFragment.class.getName(), getParams(groupPosition),
                                 R.color.white, false);
                     }

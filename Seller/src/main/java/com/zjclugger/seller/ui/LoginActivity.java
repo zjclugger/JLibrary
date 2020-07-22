@@ -122,7 +122,7 @@ public class LoginActivity extends BaseLoginActivity {
             //显示入驻UI
             Bundle params = new Bundle();
             params.putBoolean(SellerConstants.Keywords.KEY_IS_JOINED, false);
-            ARouterUtils.openDetailFragment(this,
+            ARouterUtils.openFragment(this,
                     ShopSettingFragment.class.getName(), params, R.color.bg_white, false);
         }
     }

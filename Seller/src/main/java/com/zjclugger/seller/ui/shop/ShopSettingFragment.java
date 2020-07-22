@@ -13,7 +13,7 @@ import androidx.annotation.StringRes;
 import androidx.databinding.DataBindingUtil;
 
 import com.zjclugger.lib.base.BaseFragment;
-import com.zjclugger.lib.entity.common.JMediaItem;
+import com.zjclugger.lib.entity.JMediaItem;
 import com.zjclugger.lib.ui.widget.JAlertDialog;
 import com.zjclugger.lib.utils.CommonUtils;
 import com.zjclugger.lib.utils.FragmentUtils;

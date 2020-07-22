@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 
 import com.zjclugger.lib.base.BaseListFragment;
 import com.zjclugger.lib.utils.Constants;
-import com.zjclugger.lib.view.ExtendsRecyclerView;
+import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.seller.R;
 import com.zjclugger.seller.webapi.response.ExpressCompanyResult;
 import com.zjclugger.seller.webapi.response.ExpressmanResult;
@@ -32,7 +32,7 @@ public class InvoiceListFragment extends BaseListFragment {
     private static final String TAG = "InvoiceList";
 
     @BindView(R.id.order_recycler_view)
-    ExtendsRecyclerView mOrderRecyclerView;
+    ExtendRecyclerView mOrderRecyclerView;
     private List<InvoiceResult> mInvoiceList;
 
     @Override
@@ -83,7 +83,7 @@ public class InvoiceListFragment extends BaseListFragment {
     }
 
     @Override
-    public ExtendsRecyclerView getRecyclerView() {
+    public ExtendRecyclerView getRecyclerView() {
         return mOrderRecyclerView;
     }
 

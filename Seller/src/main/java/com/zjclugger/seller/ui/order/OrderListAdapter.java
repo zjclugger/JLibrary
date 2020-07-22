@@ -47,7 +47,7 @@ public class OrderListAdapter extends JBaseQuickAdapter<OrderResult, JBaseViewHo
         } else {
             if (R.string.text_delivered == item.getStatus()) {
                 orderNOView.getValueView().setOnClickListener(v -> {
-                    ARouterUtils.openDetailFragment(mActivity,
+                    ARouterUtils.openFragment(mActivity,
                             InvoiceListFragment.class.getName(), null, R.color.bg_white, false
                     );
                 });

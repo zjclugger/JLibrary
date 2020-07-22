@@ -21,6 +21,6 @@
         android:id="@+id/sub_system_header"
         android:paddingLeft="@dimen/margin_smallest"
         style="@style/SubSystemLabel"
-        android:text="@string/sub_system_hr" />
+        android:text="@string/app_name" />
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.zjclugger.buyer.ui;
 
 import android.content.Intent;
 
+import com.zjclugger.demos.DemoMainActivity;
 import com.zjclugger.lib.base.BaseLoadingActivity;
 
 /**
@@ -17,6 +18,6 @@ public class LoadingActivity extends BaseLoadingActivity {
     @Override
     public void configStartPage() {
         //BuyerMainActivity
-        startActivity(new Intent(LoadingActivity.this, BuyerMainActivity.class));
+        startActivity(new Intent(LoadingActivity.this, DemoMainActivity.class));
     }
 }

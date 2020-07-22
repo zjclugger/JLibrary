@@ -85,17 +85,17 @@ public class GoodsListManageFragment extends BaseGoodsFragment {
             goodsResult.setName("");
             Bundle params = new Bundle();
             params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE, goodsResult);
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     GoodsManagerFragment.class.getName(), params, R.color.bg_white, false);
         });
         mBatchManageButton.setText("批量管理");
         mBatchManageButton.setOnClickListener(v -> {
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     GoodsBatchManageFragment.class.getName(), null, R.color.bg_white, false);
         });
         mCategoryManageButton.setText("分类管理");
         mCategoryManageButton.setOnClickListener(v -> {
-            ARouterUtils.openDetailFragment(getActivity(),
+            ARouterUtils.openFragment(getActivity(),
                     CategoryManageFragment.class.getName(), null, R.color.bg_white, false);
         });
         super.initViews();
@@ -147,7 +147,7 @@ public class GoodsListManageFragment extends BaseGoodsFragment {
                     params.putParcelable(SellerConstants.Keywords.KEY_GOODS_MANAGE,
                             mGoodsResultList.get(position));
                     params.putBoolean(SellerConstants.Keywords.KEY_GOODS_MANAGE_READ_ONLY, true);
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             GoodsManagerFragment.class.getName(), params, R.color.bg_white, false);
                   /*  Bundle bundle = new Bundle();
                     bundle.putString(FinanceConstants.Keywords.KEY_ORIGINAL_BILL_ID,
@@ -157,7 +157,7 @@ public class GoodsListManageFragment extends BaseGoodsFragment {
                     bundle.putString(FinanceConstants.Keywords.KEY_ORIGINAL_UPLOAD_DATE,
                             mGoodsResultList.get(position).getUploadDate());
 
-                    ARouterUtils.openDetailFragment(getActivity(),
+                    ARouterUtils.openFragment(getActivity(),
                             OriginalDetailFragment.class.getName(), bundle, R.color.white, false);*/
                 }
             }

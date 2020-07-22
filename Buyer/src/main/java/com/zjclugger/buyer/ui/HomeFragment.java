@@ -39,7 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * 首页@title <br>
@@ -107,7 +106,7 @@ public class HomeFragment extends BaseFragment {
             WidgetUtils.toast(mContext, mModuleList.get(position).getName(), false);
             if (position == 0) {
                 //美食 FoodListFragment
-                ARouterUtils.openDetailFragment(getActivity(),
+                ARouterUtils.openFragment(getActivity(),
                         ShopListFragment.class.getName(), null, R.color.bg_white, false);
             }
         });
@@ -249,7 +248,7 @@ public class HomeFragment extends BaseFragment {
         View view = getLayoutInflater().inflate(R.layout.tile_item_header,
                 (ViewGroup) mModuleRecyclerView.getParent(), false);
         TextView headerView = view.findViewById(R.id.sub_system_header);
-        headerView.setText(R.string.sub_system_hr);
+        headerView.setText(R.string.app_name);
         return view;
     }
 
