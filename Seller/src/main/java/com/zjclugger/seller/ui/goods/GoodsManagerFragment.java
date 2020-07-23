@@ -336,6 +336,7 @@ public class GoodsManagerFragment extends BaseFragment {
                         close();
                     }
                 });*/
+        close();
     }
 
     private void getBillTypeList() {

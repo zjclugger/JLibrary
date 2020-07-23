@@ -27,7 +27,6 @@ android {
         }
 
         ndk {
-            //����֧�ֵ�SO��ܹ��������߿��Ը�����Ҫ��ѡ��һ������ƽ̨��so��
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
         }
     }

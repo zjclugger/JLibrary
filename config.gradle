@@ -118,7 +118,7 @@ ext {
             //banner-v1-1.4.10
             "PictureSelector"           : "com.zjclugger.pictureselector:PictureLibrary:1.0.3",
             "JScanner"                  : "com.zjclugger.jscanner:JScanner:1.0.1",
-            "JPickerView"               : "com.zjclugger.pickerview:JPickerView:1.0.1",
+            "JPickerView"               : "com.zjclugger.pickerview:JPickerView:1.0.2",
 
             //super textview
             //"SuperTextView"             : "com.github.lygttpod:SuperTextView:2.2.4",

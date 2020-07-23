@@ -1,16 +1,13 @@
 package com.zjclugger.demos;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.zjclugger.buyer.R;
 import com.zjclugger.buyer.ui.BuyerMainActivity;
 import com.zjclugger.buyer.ui.HomeFragment;
+import com.zjclugger.buyer.ui.uc.UserProfileFragment;
 import com.zjclugger.lib.base.BaseActivity;
 import com.zjclugger.lib.entity.JListItem;
 import com.zjclugger.lib.utils.WidgetUtils;
@@ -73,6 +70,8 @@ public class DemoMainActivity extends BaseActivity {
         mListItem.add(new JListItem<>(mIndex++, "首页", HomeFragment.class.getName()));
         mListItem.add(new JListItem<>(mIndex++, "电商主页", "", new Intent(mContext,
                 BuyerMainActivity.class)));
+        mListItem.add(new JListItem<>(mIndex++, "数据绑定-个人信息（新建和更新）",
+                UserProfileFragment.class.getName()));
     }
 
     @Override

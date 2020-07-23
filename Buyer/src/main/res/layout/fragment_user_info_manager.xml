@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.zjclugger.lib.utils.CommonUtils" />
+
+        <variable
+            name="UserInfo"
+            type="com.zjclugger.buyer.webapi.response.UserInfoResult" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white">
+
+        <include
+            android:id="@+id/nav_title_layout"
+            layout="@layout/tile_detail_title" />
+
+        <TextView
+            android:id="@+id/line_1"
+            style="@style/Line"
+            android:layout_below="@id/nav_title_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical">
+
+                <com.zjclugger.lib.view.ExtendLabelValueView
+                    android:id="@+id/letv_user_name"
+                    style="@style/GoodsEditStyle"
+                    app:editText="@={UserInfo.name}"
+                    app:label_text="用户昵称"
+                    app:left_image_src="@mipmap/ic_start_red" />
+
+                <TextView style="@style/Line" />
+
+                <com.zjclugger.lib.view.ExtendLabelValueView
+                    android:id="@+id/elvv_user_sex"
+                    style="@style/GoodsEditStyle"
+                    app:edit_text_border_color="@color/transparent"
+                    app:label_text="性别"
+                    app:value_text_visibility="VISIBLE"
+                    app:left_image_src="@mipmap/ic_start_red"
+                    app:right_image_src="@mipmap/ic_arrow_right" />
+
+                <TextView style="@style/Line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/image_header_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="@dimen/margin_small"
+                        android:paddingBottom="@dimen/margin_small"
+                        android:text="上传图片"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <FrameLayout
+                        android:id="@+id/picture_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_header_view"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <TextView style="@style/Line" />
+
+                <com.zjclugger.lib.view.ExtendLabelValueView
+                    android:id="@+id/letv_user_phone"
+                    style="@style/GoodsEditStyle"
+                    android:layout_marginLeft="@dimen/margin_smallest"
+                    app:editText="@={UserInfo.phoneNumber}"
+                    app:label_text="联系方式" />
+
+                <TextView style="@style/Line" />
+
+                <com.zjclugger.lib.view.ExtendLabelValueView
+                    android:id="@+id/letv_address"
+                    style="@style/GoodsEditStyle"
+                    android:layout_marginLeft="@dimen/margin_smallest"
+                    app:editText="@={UserInfo.address}"
+                    app:edit_text_height="80dp"
+                    app:label_text="联系地址" />
+
+                <TextView style="@style/Line" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

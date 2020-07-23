@@ -17,6 +17,9 @@ public class BuyerConstants {
         public static final String KEY_ORDER_SHOP_GOODS_LIST = "order_shop_goods_list";
         public static final String KEY_ORDER_TOTAL_PRICE = "order_total_price";
         public static final String KEY_ORDER_STATUS = "order_status";
+
+        public static final String KEY_USER_INFO = "user_info";
+        public static final String KEY_USER_INFO_READ_ONLY = "user_info_read_only";
     }
 
     public class OrderStatus {

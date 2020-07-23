@@ -1,78 +1,147 @@
 package com.zjclugger.buyer.webapi.response;
 
+import android.os.Parcel;
+
 import com.google.gson.annotations.SerializedName;
 import com.zjclugger.lib.api.entity.BaseEntity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserInfoResult extends BaseEntity {
 
     @SerializedName("email")
-    private String mEmail;
+    private String email;
     @SerializedName("id")
-    private String mId;
+    private String id;
     @SerializedName("name")
-    private String mName;
+    private String name;
     @SerializedName("orgId")
-    private String mOrgId;
+    private String orgId;
     @SerializedName("orgName")
-    private String mOrgName;
+    private String orgName;
     @SerializedName("phoneNumber")
-    private String mPhoneNumber;
+    private String phoneNumber;
     @SerializedName("sexName")
-    private String mSexName;
+    private String sexName;
+    @SerializedName("imageUrl")
+    private List<String> imageUrl = new ArrayList<>();
+    private String address;
 
-    public String getEmail() {
-        return mEmail;
+    public UserInfoResult() {
     }
 
-    public void setEmail(String mEmail) {
-        this.mEmail = mEmail;
+    protected UserInfoResult(Parcel in) {
+        email = in.readString();
+        id = in.readString();
+        name = in.readString();
+        orgId = in.readString();
+        orgName = in.readString();
+        phoneNumber = in.readString();
+        sexName = in.readString();
+        imageUrl = in.createStringArrayList();
+        address = in.readString();
+    }
+
+    public static final Creator<UserInfoResult> CREATOR = new Creator<UserInfoResult>() {
+        @Override
+        public UserInfoResult createFromParcel(Parcel in) {
+            return new UserInfoResult(in);
+        }
+
+        @Override
+        public UserInfoResult[] newArray(int size) {
+            return new UserInfoResult[size];
+        }
+    };
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getId() {
-        return mId;
+        return id;
     }
 
-    public void setId(String mId) {
-        this.mId = mId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
-        return mName;
+        return name;
     }
 
-    public void setName(String mName) {
-        this.mName = mName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getOrgId() {
-        return mOrgId;
+        return orgId;
     }
 
-    public void setOrgId(String mOrgId) {
-        this.mOrgId = mOrgId;
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
     }
 
     public String getOrgName() {
-        return mOrgName;
+        return orgName;
     }
 
-    public void setOrgName(String mOrgName) {
-        this.mOrgName = mOrgName;
+    public void setOrgName(String orgName) {
+        this.orgName = orgName;
     }
 
     public String getPhoneNumber() {
-        return mPhoneNumber;
+        return phoneNumber;
     }
 
-    public void setPhoneNumber(String mPhoneNumber) {
-        this.mPhoneNumber = mPhoneNumber;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getSexName() {
-        return mSexName;
+        return sexName;
     }
 
-    public void setSexName(String mSexName) {
-        this.mSexName = mSexName;
+    public void setSexName(String sexName) {
+        this.sexName = sexName;
+    }
+
+    public List<String> getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(List<String> imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(email);
+        dest.writeString(id);
+        dest.writeString(name);
+        dest.writeString(orgId);
+        dest.writeString(orgName);
+        dest.writeString(phoneNumber);
+        dest.writeString(sexName);
+        dest.writeStringList(imageUrl);
+        dest.writeString(address);
     }
 }
