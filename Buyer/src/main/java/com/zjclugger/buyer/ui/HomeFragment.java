@@ -319,16 +319,11 @@ public class HomeFragment extends BaseFragment {
         titleList.add("Image 3");*/
 
         List<JListItem<String>> mBannerList = new ArrayList<>();
-        mBannerList.add(new JListItem(2201, "第一个", "https://img.zcool" +
-                ".cn/community/011ad05e27a173a801216518a5c505.jpg"));
-        mBannerList.add(new JListItem(2202, "第一个", "https://img.zcool" +
-                ".cn/community/0148fc5e27a173a8012165184aad81.jpg"));
-        mBannerList.add(new JListItem(2203, "第一个", "https://img.zcool" +
-                ".cn/community/013c7d5e27a174a80121651816e521.jpg"));
-        mBannerList.add(new JListItem(2204, "第一个", "https://img.zcool" +
-                ".cn/community/01b8ac5e27a173a80120a895be4d85.jpg"));
-        mBannerList.add(new JListItem(2205, "第一个", "https://img.zcool" +
-                ".cn/community/01a85d5e27a174a80120a895111b2c.jpg"));
+        mBannerList.add(new JListItem(2201, "第一个", "https://hellorfimg.zcool.cn/provider_image/large/2238330618.jpg"));
+        mBannerList.add(new JListItem(2202, "第一个", "https://hellorfimg.zcool.cn/provider_image/large/2234620750.jpg"));
+        mBannerList.add(new JListItem(2203, "第一个", "https://hellorfimg.zcool.cn/provider_image/large/2235536367.jpg"));
+        mBannerList.add(new JListItem(2204, "第一个", "https://hellorfimg.zcool.cn/provider_image/large/2235827803.jpg"));
+        mBannerList.add(new JListItem(2205, "第一个", "https://hellorfimg.zcool.cn/provider_image/large/2235587329.jpg"));
 
         mBannerView.setAdapter(new BannerImageAdapter(mBannerList))
                 .setIndicator(new BannerNumIndicator(mContext))

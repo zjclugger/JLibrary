@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserInfoResult extends BaseEntity {
-
     @SerializedName("email")
     private String email;
     @SerializedName("id")
@@ -27,6 +26,8 @@ public class UserInfoResult extends BaseEntity {
     @SerializedName("imageUrl")
     private List<String> imageUrl = new ArrayList<>();
     private String address;
+    private String birthDate;
+    private double balance;
 
     public UserInfoResult() {
     }
@@ -41,6 +42,28 @@ public class UserInfoResult extends BaseEntity {
         sexName = in.readString();
         imageUrl = in.createStringArrayList();
         address = in.readString();
+        birthDate = in.readString();
+        balance = in.readDouble();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(email);
+        dest.writeString(id);
+        dest.writeString(name);
+        dest.writeString(orgId);
+        dest.writeString(orgName);
+        dest.writeString(phoneNumber);
+        dest.writeString(sexName);
+        dest.writeStringList(imageUrl);
+        dest.writeString(address);
+        dest.writeString(birthDate);
+        dest.writeDouble(balance);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
     public static final Creator<UserInfoResult> CREATOR = new Creator<UserInfoResult>() {
@@ -127,21 +150,19 @@ public class UserInfoResult extends BaseEntity {
         this.address = address;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
+    public String getBirthDate() {
+        return birthDate;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(email);
-        dest.writeString(id);
-        dest.writeString(name);
-        dest.writeString(orgId);
-        dest.writeString(orgName);
-        dest.writeString(phoneNumber);
-        dest.writeString(sexName);
-        dest.writeStringList(imageUrl);
-        dest.writeString(address);
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 }

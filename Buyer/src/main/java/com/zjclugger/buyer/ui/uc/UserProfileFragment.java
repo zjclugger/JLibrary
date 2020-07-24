@@ -73,6 +73,9 @@ public class UserProfileFragment extends BaseFragment {
         View.OnClickListener openUserInfoListener = v -> {
             UserInfoResult result = new UserInfoResult();
             result.setName("");
+            List<String> imageList = new ArrayList<>();
+            imageList.add("http://img.qqzhi.com/uploads/2019-04-06/103454404.jpg");
+            result.setImageUrl(imageList);
 
             Bundle params = new Bundle();
             params.putParcelable(BuyerConstants.Keywords.KEY_USER_INFO, result);
@@ -89,12 +92,13 @@ public class UserProfileFragment extends BaseFragment {
             imageList.add("http://img.qqzhi.com/uploads/2019-03-26/203922802.jpg");
             imageList.add("http://img.qqzhi.com/uploads/2019-03-25/153128925.jpg");
             imageList.add("http://img.qqzhi.com/uploads/2019-05-23/184503893.jpg");
-            imageList.add("http://img.qqzhi.com/uploads/2019-04-19/181211409.jpg");
             UserInfoResult result = new UserInfoResult();
             result.setId("102");
             result.setSexName("男");
             result.setName("光翼蜗牛");
             result.setImageUrl(imageList);
+            result.setBirthDate("1998-10-01 10:00:03");
+            result.setBalance(999999999.99d);
             result.setAddress("大宇宙Z星际X星系J星座C恒星系统Y星球F高地");
             result.setPhoneNumber("19988886666");
 

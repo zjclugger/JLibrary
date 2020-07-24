@@ -14,7 +14,6 @@ import com.zjclugger.lib.utils.WidgetUtils;
 import com.zjclugger.lib.view.ExtendRecyclerView;
 import com.zjclugger.router.utils.ARouterUtils;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +59,7 @@ public class DemoMainActivity extends BaseActivity {
         });
         mRecyclerView.getPager().setRecordTotal(mListItem.size());
         mRecyclerView.setLayoutParameter(true, 3, true);
+        mRecyclerView.setSpan(5f);
         mRecyclerView.setRefreshLayoutListener(refreshLayout -> {
             WidgetUtils.toast(mContext, getString(R.string.info_last_page));
             refreshLayout.finishLoadMoreWithNoMoreData();
@@ -72,6 +72,7 @@ public class DemoMainActivity extends BaseActivity {
                 BuyerMainActivity.class)));
         mListItem.add(new JListItem<>(mIndex++, "数据绑定-个人信息（新建和更新）",
                 UserProfileFragment.class.getName()));
+        mListItem.add(new JListItem<>(mIndex++, "轮播图", HomeFragment.class.getName()));
     }
 
     @Override
